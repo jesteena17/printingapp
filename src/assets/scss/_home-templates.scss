@@ -1,0 +1,124 @@
+.homeTemplates {
+	background: url("../images/templates-bg.png") repeat top left;
+	padding-top: 4.8125rem;
+	padding-bottom: 3.75rem;
+	margin-bottom: 1.125rem;
+	h2 {
+		font-family: $hbold;
+		font-size: 2.25rem;
+		color: #393185;
+		text-align: center;
+		margin-bottom: 1.1875rem;
+	}
+	p {
+		font-family: $hregular;
+		font-size: 1.125rem;
+		text-align: center;
+		margin-bottom: 2.75rem;
+	}
+	.templatesItem {
+		margin-bottom: 2.3125rem;
+		.btn {
+			font-family: $hbold;
+			font-size: 1.125rem;
+			color: #3e4143;
+			padding: 0.25rem;
+			padding-left: 0;
+			&:hover {
+				color: $primary;
+			}
+		}
+		.thumb {
+			overflow: hidden;
+			margin-bottom: 1.5625rem;
+			a {
+				display: block;
+			}
+			img {
+				transition: all 0.3s ease;
+			}
+		}
+		&:hover {
+			.thumb img {
+				// transform: scale(1.08);
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.homeTemplates {
+		background: none;
+		position: relative;
+		z-index: 1;
+		&:before {
+			width: 94%;
+			left: 3%;
+			right: 3%;
+			top: 0;
+			bottom: 0;
+			position: absolute;
+			content: "";
+			background: url("../images/templates-bg.png") repeat top left;
+			z-index: -1;
+		}
+	}
+}
+@media (min-width: 1240px) {
+	.homeTemplates {
+		.templateRow {
+			margin-left: -19px;
+			margin-right: -19px;
+			.templateCol {
+				padding-left: 19px;
+				padding-right: 19px;
+			}
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.homeTemplates {
+		padding-top: 3rem;
+		padding-bottom: 1.5rem;
+		h2 {
+			font-size: 1.75rem;
+		}
+		p {
+			margin-bottom: 2rem;
+		}
+		.templatesItem {
+			margin-bottom: 1.5rem;
+			.thumb {
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.homeTemplates {
+		.templateRow {
+			margin-left: -5px;
+			margin-right: -5px;
+			.templateCol {
+				padding-right: 5px;
+				padding-left: 5px;
+			}
+		}
+		.templatesItem {
+			.btn {
+				padding: 0;
+				font-size: 0.875rem;
+				display: block;
+				text-align: left;
+			}
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	.homeTemplates {
+		.templatesItem {
+			.btn {
+				font-size: 1rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,125 @@
+.filterModal {
+	// background: rgba(255,255,255,0.8);
+	.modal-dialog-center {
+		display: flex;
+		align-items: center;
+		min-height: 100%;
+	}
+	.modal-dialog {
+		width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		.modal-content {
+			border-radius: 0;
+			border: 1px solid #ccd8ea;
+		}
+	}
+	.modal-header {
+		padding: 0;
+		border-radius: 0;
+		border-bottom: none;
+		position: relative;
+		.close {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			z-index: 10;
+			font-size: 0.875rem;
+			opacity: 1;
+			color: #3e4143;
+			margin: 0;
+			padding: 0.5rem;
+			transition: all 0.3s ease-in-out;
+			text-shadow: none;
+		}
+	}
+	.modal-body {
+		padding: 2rem 1.5rem 3rem; 
+		h5 {
+			font-family: $hbold;
+			font-size: 1rem;
+			color: #393185;
+			margin-bottom: 1rem;
+		}
+		.catFilter, .colFilter {
+			padding-left: 0;
+			margin-bottom: 1rem;
+			list-style: none;
+			li {
+				input {
+					display: none;
+				}
+				label {
+					cursor: pointer;
+				}
+			}
+		}
+		.catFilter {
+			margin-left: -7px;
+			margin-right: -7px;
+			li {
+				padding-left: 7px;
+				padding-right: 7px;
+				display: inline-block;
+				margin-bottom: 0.75rem;
+				label {
+					font-family: $hregular;
+					font-size: 0.75rem;
+					color: #606060;
+					border: 1px solid #ccd8ea;
+					box-shadow: 0px 0px 5px 0px rgba(219,232,252,1);
+					padding: 0.5rem 1.25rem;
+					border-radius: 25px;
+					background: #fff;
+				}
+				input:checked + label {
+					font-family: $hbold;
+					color: #fff;
+					background: #3c2d8a;
+				}
+			}
+		}
+		.colFilter {
+			margin-left: -6px;
+			margin-right: -6px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			li {
+				padding: 1px 6px;
+				display: inline-flex;
+				label {
+					padding: 5px;
+					border-radius: 5px;
+					border: 1px solid #ccd8ea;
+					box-shadow: 0px 0px 5px 0px rgba(219,232,252,1);
+					width: 30px;
+					height: 30px;
+					background: #fff;
+					img {
+						vertical-align: top;
+						max-width: 100%;
+					}
+				}
+				input:checked + label {
+					background: #3c2d8a;
+					border: 1px solid #3c2d8a;
+					width: 26px;
+					height: 26px;
+					margin: 0 2px;
+				}
+			}
+		}
+		.applyBtn {
+			padding-top: 1rem;
+			.btn {
+				font-family: $hregular;
+				font-size: 0.8125rem;
+				background: $secondary;
+				color: #fff;
+				text-transform: uppercase;
+				padding: 10px 49px;
+			}
+		}
+	}
+}

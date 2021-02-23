@@ -1,0 +1,113 @@
+/*homeCarousel Start*/
+.homeCarousel {
+	margin-bottom: 3.75rem;
+	.carousel-item {
+		background: #4a4670;
+		padding-top: 110px;
+		padding-bottom: 30px;
+	}
+	.carousel-caption {
+		position: relative;
+		left: auto;
+		right: auto;
+		top: auto;
+		bottom: auto;
+		text-align: left;
+		.captionWrap {
+			padding-left: 60px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		h1 {
+			font-family: $hbold;
+			font-size: 3.125rem;
+			color: #fff;
+			margin-bottom: 0.5rem;
+		}
+		p {
+			font-family: $hlight;
+			font-size: 1.125rem;
+			color: #fff;
+			margin-bottom: 2rem;
+			line-height: 1.2;
+		}
+		.btn {
+			font-family: $hregular;
+			font-size: 0.9375rem;
+			color: #fff;
+			text-transform: uppercase;
+			border-radius: 0;
+			border-width: 3px;
+			padding: 0.8125rem 2.625rem;
+			margin-right: 10px;
+			&.btn-outline-light {
+				&:hover {
+					color: $primary
+				}
+			}
+		}
+	}
+	.carouselIndicators {
+		left: 0;
+		right: 0;
+		bottom: 20px;
+		position: absolute;
+		.carousel-indicators {
+			margin-right: 0;
+			margin-left: 0;
+			position: relative;
+			margin-bottom: 0;
+			justify-content: flex-start;
+			li {
+				margin-left: 0;
+				margin-right: 15px;
+			}
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.homeCarousel {
+		margin-bottom: 3rem;
+		.carouselIndicators {
+			bottom: 5px;
+		}
+		.carousel-caption {
+			padding-top: 0;
+			.captionWrap {
+				padding-left: 0;
+			}
+			h1 {
+				font-size: 2rem;
+			}
+			p {
+				font-size: 1rem;
+				margin-bottom: 1rem;
+			}
+			.btn {
+				padding: 0.5rem 1.5rem;
+				font-size: 0.75rem;
+			}
+		}
+	}
+}
+@media (max-width: 575.98px) {
+	.homeCarousel {
+		.carousel-caption {
+			// background: rgba(57,49,133,0.8);
+			h1 {
+				font-size: 1.75rem;
+			}
+			.btn {
+				padding: 0.5rem 1.25rem;
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.homeCarousel {
+		.carouselIndicators {
+			bottom: 59px;
+		}
+	}
+}
+/*homeCarousel End*/

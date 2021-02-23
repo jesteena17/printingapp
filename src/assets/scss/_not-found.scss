@@ -1,0 +1,21 @@
+.notFound {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	h1 {
+		font-family: $hbold;
+		font-size: 2rem;
+		color: #393185;
+	}
+	p {
+		color: #212529;
+	}
+}
+@media (max-width: 767.98px) {
+	.notFound {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		h1 {
+			font-size: 1.25rem;
+		}
+	}
+}

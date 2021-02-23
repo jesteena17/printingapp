@@ -1,0 +1,33 @@
+body {
+	font-family: 'helveticaregular';
+}
+a, 
+.btn, 
+.navbar, 
+.navbarLeft, 
+.navbarRight, 
+.mainNavList,  
+.dropdownSearch .dropdown-menu {
+	transition: all 0.3s ease-in-out;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	appearance: none;
+	margin: 0
+}
+
+input[type=number] {
+	appearance: textfield
+}
+
+a:focus,
+.btn:focus,
+button:focus,
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
