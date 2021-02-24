@@ -8,11 +8,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { CardsComponent } from './printproducts/cards/cards.component';
-import { GreetingcardsComponent } from './printproducts/greetingcards/greetingcards.component';
-import { LetterheadsComponent } from './printproducts/letterheads/letterheads.component';
-import { PostersComponent } from './printproducts/posters/posters.component';
-import { BusinesscardsComponent } from './printproducts/businesscards/businesscards.component';
 import { UploaddesignsComponent } from './printproducts/uploaddesigns/uploaddesigns.component';
 import { FacebookComponent } from './digitalproducts/facebook/facebook.component';
 import { TwitterComponent } from './digitalproducts/twitter/twitter.component';
@@ -39,11 +34,7 @@ import { ItemfilterComponent } from './printproducts/item/itemfilter/itemfilter.
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    CardsComponent,
-    GreetingcardsComponent,
-    LetterheadsComponent,
-    PostersComponent,
-    BusinesscardsComponent,
+   
     UploaddesignsComponent,
     FacebookComponent,
     TwitterComponent,

@@ -1,11 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { CardsComponent } from './printproducts/cards/cards.component';
-import { GreetingcardsComponent } from './printproducts/greetingcards/greetingcards.component';
-import { LetterheadsComponent } from './printproducts/letterheads/letterheads.component';
-import { PostersComponent } from './printproducts/posters/posters.component';
-import { BusinesscardsComponent } from './printproducts/businesscards/businesscards.component';
 import { UploaddesignsComponent } from './printproducts/uploaddesigns/uploaddesigns.component';
 import { FacebookComponent } from './digitalproducts/facebook/facebook.component';
 import { TwitterComponent } from './digitalproducts/twitter/twitter.component';
@@ -31,7 +26,7 @@ const routes: Routes = [
   {path:'letterhead/:id',component:ItemComponent},
   {path:'posters/:id',component:ItemComponent},
   {path:'businesscards/:id',component:ItemComponent},
-  {path:'uploaddesigns/:id',component:ItemComponent},
+  {path:'uploaddesigns/',component:UploaddesignsComponent},
   {path:'fb',component:FacebookComponent},
   {path:'tw',component:TwitterComponent},
   {path:'ln',component:LinkedinComponent},
