@@ -25,7 +25,7 @@ import { ItemComponent } from './printproducts/item/item.component';
 const routes: Routes = [
 
   {path:'',component:HomeComponent },
-  {path:'cards',component:CardsComponent},
+  {path:'cards',component:ItemComponent},
   {path:'item',component:ItemComponent},
   {path:'greetingcards',component:GreetingcardsComponent},
   {path:'letterhead',component:LetterheadsComponent},

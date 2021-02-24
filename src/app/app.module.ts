@@ -71,7 +71,10 @@ import { ItemfilterComponent } from './printproducts/item/itemfilter/itemfilter.
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [SharedService,{provide: APP_BASE_HREF, useValue: 'http://localhost:4200/'}],
+  providers: [
+    SharedService,
+    {provide: APP_BASE_HREF, useValue: 'http://localhost:4200/'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
