@@ -20,8 +20,9 @@ import { ItemComponent } from './printproducts/item/item.component';
 const routes: Routes = [
 
   {path:'',component:HomeComponent },
-  {path:'cards/:id/',component:ItemComponent},
+  {path:'home',component:HomeComponent },
   {path:'item',component:ItemComponent},
+  {path:'cards/:id',component:ItemComponent},
   {path:'greetingcards/:id',component:ItemComponent},
   {path:'letterhead/:id',component:ItemComponent},
   {path:'posters/:id',component:ItemComponent},
