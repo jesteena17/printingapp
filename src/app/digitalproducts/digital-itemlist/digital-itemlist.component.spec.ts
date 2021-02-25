@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LinkedinComponent } from './linkedin.component';
+import { DigitalItemlistComponent } from './digital-itemlist.component';
 
-describe('LinkedinComponent', () => {
-  let component: LinkedinComponent;
-  let fixture: ComponentFixture<LinkedinComponent>;
+describe('DigitalItemlistComponent', () => {
+  let component: DigitalItemlistComponent;
+  let fixture: ComponentFixture<DigitalItemlistComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LinkedinComponent ]
+      declarations: [ DigitalItemlistComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LinkedinComponent);
+    fixture = TestBed.createComponent(DigitalItemlistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

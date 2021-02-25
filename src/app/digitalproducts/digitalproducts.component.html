@@ -5,20 +5,19 @@
                 <div class="titleNavLeft">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Visiting Cards</a>
+                            <a routerLink="/in/{{13}}" routerLinkActive="active" class="nav-link ">Instagram</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Posters</a>
+                            <a routerLink="/ln/{{35}}" routerLinkActive="active" class="nav-link">Linkedin</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a routerLink="/tw/{{36}}" routerLinkActive="active" class="nav-link">Twitter</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Flyers</a>
+                            <a routerLink="/fb/{{37}}" routerLinkActive="active" class="nav-link">Facebook</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Letter Head</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Greeting Cards</a>
-                        </li>
+                       
                     </ul>
                 </div>
                 <ul class="controlNav">
@@ -28,6 +27,12 @@
             </div>
         </div>
     </div>
+
+    
+
+
+
+
     <div class="productList">
         <div class="container">
             <div class="productFilter d-none d-md-flex">
@@ -56,9 +61,9 @@
                                 <option>Color 4</option>
                             </select>
                         </div>
-                        <!-- <div class="form-group search w-255">
+                        <div class="form-group search w-255">
 									<input type="text" class="form-control" placeholder="Search">
-								</div> -->
+								</div>
                     </form>
                 </div>
             </div>
@@ -66,10 +71,7 @@
                 <div class="col-sm-3 col-md-4 col-lg-3 productCol" *ngFor="let grocery of product">
                     <app-item-list [productData] = "grocery"></app-item-list>
                 </div>
-         
-       
-            
-            </div>
+               </div>
 
         </div>
     </div>

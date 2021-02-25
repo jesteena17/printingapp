@@ -9,10 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { UploaddesignsComponent } from './printproducts/uploaddesigns/uploaddesigns.component';
-import { FacebookComponent } from './digitalproducts/facebook/facebook.component';
-import { TwitterComponent } from './digitalproducts/twitter/twitter.component';
-import { LinkedinComponent } from './digitalproducts/linkedin/linkedin.component';
-import { InstagramComponent } from './digitalproducts/instagram/instagram.component';
+
 import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 import { OurservicesComponent } from './ourservices/ourservices.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
@@ -23,11 +20,16 @@ import { MyordersComponent } from './account/myorders/myorders.component';
 import { SwitchcompanyComponent } from './account/switchcompany/switchcompany.component';
 import { SwitchclientComponent } from './account/switchclient/switchclient.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { ItemComponent } from './printproducts/item/item.component';
-import { ItemListComponent } from './printproducts/item/item-list/item-list.component';
-import { ItemSingleComponent } from './printproducts/item/item-single/item-single.component';
-import { ItemcategoryComponent } from './printproducts/item/itemcategory/itemcategory.component';
-import { ItemfilterComponent } from './printproducts/item/itemfilter/itemfilter.component';
+
+import { ItemListComponent } from './printproducts/item-list/item-list.component';
+import { ItemSingleComponent } from './printproducts/item-single/item-single.component';
+
+import { DigitalproductsComponent } from './digitalproducts/digitalproducts.component';
+import { DigitalItemlistComponent } from './digitalproducts/digital-itemlist/digital-itemlist.component';
+import { DigitalItemsingleComponent } from './digitalproducts/digital-itemsingle/digital-itemsingle.component';
+import { PrintproductsComponent } from './printproducts/printproducts.component';
+import { PrintproductService } from './printproducts/printproduct.service';
+import { DigitalproductService } from './digitalproducts/digitalproduct.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,10 +38,7 @@ import { ItemfilterComponent } from './printproducts/item/itemfilter/itemfilter.
     FooterComponent,
    
     UploaddesignsComponent,
-    FacebookComponent,
-    TwitterComponent,
-    LinkedinComponent,
-    InstagramComponent,
+   
     SocialmediaComponent,
     OurservicesComponent,
     AboutusComponent,
@@ -50,11 +49,14 @@ import { ItemfilterComponent } from './printproducts/item/itemfilter/itemfilter.
     SwitchcompanyComponent,
     SwitchclientComponent,
     PagenotfoundComponent,
-    ItemComponent,
+   
     ItemListComponent,
     ItemSingleComponent,
-    ItemcategoryComponent,
-    ItemfilterComponent
+  
+    DigitalproductsComponent,
+    DigitalItemlistComponent,
+    DigitalItemsingleComponent,
+    PrintproductsComponent
     
   ],
   imports: [
@@ -63,7 +65,7 @@ import { ItemfilterComponent } from './printproducts/item/itemfilter/itemfilter.
     HttpClientModule
   ],
   providers: [
-    SharedService,
+    SharedService,PrintproductService,DigitalproductService,
     {provide: APP_BASE_HREF, useValue: 'http://localhost:4200/'}
   ],
   bootstrap: [AppComponent]
